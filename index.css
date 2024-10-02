@@ -1,0 +1,84 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(189, 33, 189);
+}
+
+p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Réinitialisation des marges et paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixe la barre de navigation en haut de la page */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ce19a1; /* Couleur de fond */
+    z-index: 1000; /* Assure que le menu reste au-dessus du contenu */
+    padding: 10px 0;
+}
+
+/* Enlève les puces des listes */
+.navbar {
+    list-style-type: none;
+    display: flex; /* Affiche les éléments horizontalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    padding: 0; /* Supprime les marges internes de la liste */
+}
+
+/* Style pour les éléments du menu */
+.navbar li {
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+/* Supprime l'espacement après le dernier élément */
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+/* Style pour les liens */
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+/* Style au survol */
+.navbar li a:hover {
+    background-color: #8e16c5; /* Couleur de fond au survol */
+}
+
+/* Ajoute un espace sous la navigation pour que le contenu ne soit pas caché */
+.content {
+    margin-top: 80px; /* Espace pour le menu fixe */
+    padding: 20px;
+}
+
+select {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#citationContainer {
+    margin-top: 20px;
+    padding: 20px;
+}
